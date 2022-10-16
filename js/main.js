@@ -1,12 +1,10 @@
-//imports always go at the top of the file
-//this is called an IIFE (immediately invoked function expression)
 import { getData } from "./modules/dataMiner.js";
-//it's a pretty common 
 (() => {
     console.log('fired!');
-    let theThings = document.querySelector("#team-section"),
+    let theThings = document.querySelector("#about_section"),
         theTemplate = document.querySelector("#bio-template").content,
         faveData;
+        debugger;
 
     function buildThings(data) {
         //get all the keys (names) from the data object and use that to iterate through the data
